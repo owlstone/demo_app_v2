@@ -5,9 +5,12 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#group :production do // This was included in the tutorial, but seems to persistently request an sqlite3 adapter. However, code works when this is hashed.
-  gem 'sqlite3', '1.3.7'
-#end // ditto re: group :production do
+# This was included in the tutorial, but seems to persistently request an sqlite3 adapter. However, code works when this is hashed.
+# Ended up hashing it out because Heroku provides PostgreSQL database for app
+# https://devcenter.heroku.com/articles/rails3
+# group :production do
+#   gem 'sqlite3', '1.3.7'
+# end
 
 
 # Gems used only for assets and not required
